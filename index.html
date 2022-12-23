@@ -1,0 +1,65 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador - ONE</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./imagens/logo.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img class="logo" src="./imagens/logo.svg" alt="logo alura">
+            <h1 class="titulo-logo">Decodificador</h1>
+        </div>
+
+    </header>
+    <main>
+        <div class="container">
+            <div class="encriptador">
+                <form class="encriptador-form">
+                    <div class="texto-area">
+                        <textarea name="texto" id="texto" placeholder="Digite o texto aqui"></textarea>
+                        <div class="texto-info">
+                            <div class="info">
+                                <img src="./imagens/exclamacao.svg">
+                                <p id="advertencia">Só use letras minúsculas</p>
+                            </div>
+
+                        </div>
+                        <div class="btn">
+                            <button id="encri" class="btn-cript" type="button">Criptografar</button>
+                            <button id="desencri" class="btn-descript" type="button">Descriptografar</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="resultado">
+                    <div class="container-resultado">
+                        <div class="nao-contem-resultado" id="semResultado">
+                            <div class="imagem-sem-resul">
+                                <img src="./imagens/menina.svg" alt="">
+                            </div>
+                            <p>Nenhuma mensagem foi encontrada.</p>
+                            <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+                            </div>
+
+                        <div class="container-resultado" id="resultado">
+                            <textarea name="texto-resultado" id="textoResultado" disabled></textarea>
+                            <button id="copiar" type="button"><img src="./imagens/copiar.svg"> Copiar</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">© Criado por <a href="https://github.com/AmiltonSilvaDev" target="_blank" rel="noopener noreferrer">Amilton Developer</a></p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
